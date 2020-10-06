@@ -6,7 +6,7 @@
   <title>Video Content Provider | CNN Indonesia</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/png" href="<?php echo base_url('assets/img/cnn-logo.png')?>"/>
+  <link rel="icon" type="image/png" href="<?php echo base_url('assets/img/trans.png')?>"/>
   <!-- Font Awesome -->
   <link rel="stylesheet" href="<?php echo base_url('assets/AdminLTE/plugins/fontawesome-free/css/all.css')?>">
   <!-- Ionicons -->

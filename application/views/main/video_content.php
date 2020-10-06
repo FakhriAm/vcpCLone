@@ -26,11 +26,14 @@
                     <h3 class="card-title"><?php echo $key->video_title?></h3>
                   </div>
                   <div class="card-body">
-                    <img src="<?php echo $thumbnail?>" style="height:25rem;" class="img-thumbnail">
+                    <img src="<?php echo $thumbnail?>" style="height:20rem;" class="img-thumbnail">
                     <p><?php echo substr($key->description,0,20)?></p>
                   </div>
                   <div class="card-footer">
-                    Price : <?php echo "Rp. ".number_format($key->price)?>
+                  <i class="far fa-eye"></i>
+                    Telah dilihat :  0000x
+                    <!-- <?php echo "Rp. ".number_format($key->price)?> -->
+
                     <a href="<?php echo base_url('video/detail?q=').$key->id_video?>">
                       <button class="btn btn-info float-right btn-sm">
                         <span class="text">

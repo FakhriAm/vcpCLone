@@ -7,7 +7,7 @@ class Video extends CI_Controller {
 	}
 
 	public function index(){
-		$this->load->view('parts/wrapper',array('content'=>'main/dashboard','video_category'=> $this->loadVideoCategory(),'video_type'=>$this->loadVideoType()));
+		$this->load->view('parts/wrapper',array('content'=>'main/dashboard','video_category'=> $this->loadVideoCategory(),'video_source'=> $this->loadVideoSource(),'video_type'=>$this->loadVideoType()));
 	}
 
 	public function detail(){
@@ -45,6 +45,11 @@ class Video extends CI_Controller {
 	public function loadVideoCategory(){
 		return $this->vid->get_video_category();
 	}
+
+	public function loadVideoSource(){
+		return $this->vid->get_video_source();
+	}
+
 
 	public function loadVideoType(){
 		return $this->vid->get_video_type();
